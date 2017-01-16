@@ -1,0 +1,1055 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BD_DespTanqInteModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="BD_DespTanqInteModelStoreContainer">
+          <EntitySet Name="Cliente" EntityType="BD_DespTanqInteModel.Store.Cliente" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DetalleFactura" EntityType="BD_DespTanqInteModel.Store.DetalleFactura" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GuiaRemision" EntityType="BD_DespTanqInteModel.Store.GuiaRemision" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="InicioSesion" EntityType="BD_DespTanqInteModel.Store.InicioSesion" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Medidor" EntityType="BD_DespTanqInteModel.Store.Medidor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MetrosCubicosDepachados" EntityType="BD_DespTanqInteModel.Store.MetrosCubicosDepachados" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tanquero" EntityType="BD_DespTanqInteModel.Store.Tanquero" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Transportista" EntityType="BD_DespTanqInteModel.Store.Transportista" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Usuario" EntityType="BD_DespTanqInteModel.Store.Usuario" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UsuariosPermisos" EntityType="BD_DespTanqInteModel.Store.UsuariosPermisos" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_DetalleFactura_Cliente" Association="BD_DespTanqInteModel.Store.FK_DetalleFactura_Cliente">
+            <End Role="Cliente" EntitySet="Cliente" />
+            <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleFactura_Tanquero" Association="BD_DespTanqInteModel.Store.FK_DetalleFactura_Tanquero">
+            <End Role="Tanquero" EntitySet="Tanquero" />
+            <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GuiaRemision_Cliente" Association="BD_DespTanqInteModel.Store.FK_GuiaRemision_Cliente">
+            <End Role="Cliente" EntitySet="Cliente" />
+            <End Role="GuiaRemision" EntitySet="GuiaRemision" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GuiaRemision_DetalleFactura" Association="BD_DespTanqInteModel.Store.FK_GuiaRemision_DetalleFactura">
+            <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+            <End Role="GuiaRemision" EntitySet="GuiaRemision" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GuiaRemision_Transportista" Association="BD_DespTanqInteModel.Store.FK_GuiaRemision_Transportista">
+            <End Role="Transportista" EntitySet="Transportista" />
+            <End Role="GuiaRemision" EntitySet="GuiaRemision" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InicioSesion_Usuario" Association="BD_DespTanqInteModel.Store.FK_InicioSesion_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="InicioSesion" EntitySet="InicioSesion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Medidor_Usuario" Association="BD_DespTanqInteModel.Store.FK_Medidor_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Medidor" EntitySet="Medidor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MetrosCubicosDepachados_GuiaRemision" Association="BD_DespTanqInteModel.Store.FK_MetrosCubicosDepachados_GuiaRemision">
+            <End Role="GuiaRemision" EntitySet="GuiaRemision" />
+            <End Role="MetrosCubicosDepachados" EntitySet="MetrosCubicosDepachados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosPermisos_Usuario" Association="BD_DespTanqInteModel.Store.FK_UsuariosPermisos_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="UsuariosPermisos" EntitySet="UsuariosPermisos" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="CedRucClie" />
+          </Key>
+          <Property Name="CedRucClie" Type="nchar" Nullable="false" MaxLength="11" />
+          <Property Name="NombreClie" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ApellidoClie" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DireccionCli" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="TelefonoCli" Type="nchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="DetalleFactura">
+          <Key>
+            <PropertyRef Name="NumFactura" />
+          </Key>
+          <Property Name="NumFactura" Type="int" Nullable="false" />
+          <Property Name="NumControl" Type="int" Nullable="false" />
+          <Property Name="FechEmision" Type="datetime" Nullable="false" />
+          <Property Name="FechFact" Type="datetime" Nullable="false" />
+          <Property Name="CedRucClie" Type="nchar" Nullable="false" MaxLength="11" />
+          <Property Name="PlacaTanquero" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="MetrosCubicosFacturados" Type="int" Nullable="false" />
+          <Property Name="ValorCancelado" Type="decimal" Nullable="false" Precision="12" Scale="2" />
+        </EntityType>
+        <EntityType Name="GuiaRemision">
+          <Key>
+            <PropertyRef Name="ReferRemis" />
+          </Key>
+          <Property Name="ReferRemis" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NumFactura" Type="int" Nullable="false" />
+          <Property Name="FechInicTras" Type="date" Nullable="false" />
+          <Property Name="FechFinTras" Type="date" Nullable="false" />
+          <Property Name="HoraDespacho" Type="nchar" Nullable="false" MaxLength="5" />
+          <Property Name="CedRucClie" Type="nchar" Nullable="false" MaxLength="11" />
+          <Property Name="PuntoDestino" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="CedRucTran" Type="nchar" Nullable="false" MaxLength="11" />
+        </EntityType>
+        <EntityType Name="InicioSesion">
+          <Key>
+            <PropertyRef Name="IdIS" />
+          </Key>
+          <Property Name="IdIS" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NombreUsua" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="FecHorIni" Type="datetime" Nullable="false" />
+          <Property Name="FechHorFin" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Medidor">
+          <Key>
+            <PropertyRef Name="IdMedidor" />
+          </Key>
+          <Property Name="IdMedidor" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LectIni" Type="int" Nullable="false" />
+          <Property Name="LectFin" Type="int" Nullable="false" />
+          <Property Name="Fecha" Type="date" Nullable="false" />
+          <Property Name="Observacion" Type="varchar" MaxLength="100" />
+          <Property Name="NombreUsua" Type="varchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="MetrosCubicosDepachados">
+          <Key>
+            <PropertyRef Name="ReferRemis" />
+          </Key>
+          <Property Name="ReferRemis" Type="int" Nullable="false" />
+          <Property Name="NumFactura" Type="int" Nullable="false" />
+          <Property Name="MetrCubiDesp" Type="int" Nullable="false" />
+          <Property Name="MetrCubiSobr" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tanquero">
+          <Key>
+            <PropertyRef Name="PlacaTanquero" />
+          </Key>
+          <Property Name="PlacaTanquero" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="TanqueroNum" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Capacidad" Type="int" Nullable="false" />
+          <Property Name="Marca" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Transportista">
+          <Key>
+            <PropertyRef Name="CedRucTran" />
+          </Key>
+          <Property Name="CedRucTran" Type="nchar" Nullable="false" MaxLength="11" />
+          <Property Name="NombreTran" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ApellidoTRan" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Usua" />
+          </Key>
+          <Property Name="Usua" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="ContrasenaUsua" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="CedRucUsua" Type="nchar" Nullable="false" MaxLength="11" />
+          <Property Name="NombreUsuario" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ApellidoUsuario" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="TipoUsuario" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="UsuariosPermisos">
+          <Key>
+            <PropertyRef Name="IdPerUsu" />
+          </Key>
+          <Property Name="IdPerUsu" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Usuario" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="Tabla" Type="varchar" Nullable="false" MaxLength="26" />
+          <Property Name="Acceso" Type="bit" Nullable="false" />
+          <Property Name="Guardar" Type="bit" Nullable="false" />
+          <Property Name="Modificar" Type="bit" Nullable="false" />
+          <Property Name="Eliminar" Type="bit" Nullable="false" />
+          <Property Name="Imprimir" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_DetalleFactura_Cliente">
+          <End Role="Cliente" Type="BD_DespTanqInteModel.Store.Cliente" Multiplicity="1" />
+          <End Role="DetalleFactura" Type="BD_DespTanqInteModel.Store.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="CedRucClie" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="CedRucClie" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleFactura_Tanquero">
+          <End Role="Tanquero" Type="BD_DespTanqInteModel.Store.Tanquero" Multiplicity="1" />
+          <End Role="DetalleFactura" Type="BD_DespTanqInteModel.Store.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tanquero">
+              <PropertyRef Name="PlacaTanquero" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="PlacaTanquero" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GuiaRemision_Cliente">
+          <End Role="Cliente" Type="BD_DespTanqInteModel.Store.Cliente" Multiplicity="1" />
+          <End Role="GuiaRemision" Type="BD_DespTanqInteModel.Store.GuiaRemision" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="CedRucClie" />
+            </Principal>
+            <Dependent Role="GuiaRemision">
+              <PropertyRef Name="CedRucClie" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GuiaRemision_DetalleFactura">
+          <End Role="DetalleFactura" Type="BD_DespTanqInteModel.Store.DetalleFactura" Multiplicity="1" />
+          <End Role="GuiaRemision" Type="BD_DespTanqInteModel.Store.GuiaRemision" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DetalleFactura">
+              <PropertyRef Name="NumFactura" />
+            </Principal>
+            <Dependent Role="GuiaRemision">
+              <PropertyRef Name="NumFactura" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GuiaRemision_Transportista">
+          <End Role="Transportista" Type="BD_DespTanqInteModel.Store.Transportista" Multiplicity="1" />
+          <End Role="GuiaRemision" Type="BD_DespTanqInteModel.Store.GuiaRemision" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transportista">
+              <PropertyRef Name="CedRucTran" />
+            </Principal>
+            <Dependent Role="GuiaRemision">
+              <PropertyRef Name="CedRucTran" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InicioSesion_Usuario">
+          <End Role="Usuario" Type="BD_DespTanqInteModel.Store.Usuario" Multiplicity="1" />
+          <End Role="InicioSesion" Type="BD_DespTanqInteModel.Store.InicioSesion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Usua" />
+            </Principal>
+            <Dependent Role="InicioSesion">
+              <PropertyRef Name="NombreUsua" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Medidor_Usuario">
+          <End Role="Usuario" Type="BD_DespTanqInteModel.Store.Usuario" Multiplicity="1" />
+          <End Role="Medidor" Type="BD_DespTanqInteModel.Store.Medidor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Usua" />
+            </Principal>
+            <Dependent Role="Medidor">
+              <PropertyRef Name="NombreUsua" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MetrosCubicosDepachados_GuiaRemision">
+          <End Role="GuiaRemision" Type="BD_DespTanqInteModel.Store.GuiaRemision" Multiplicity="1" />
+          <End Role="MetrosCubicosDepachados" Type="BD_DespTanqInteModel.Store.MetrosCubicosDepachados" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="GuiaRemision">
+              <PropertyRef Name="ReferRemis" />
+            </Principal>
+            <Dependent Role="MetrosCubicosDepachados">
+              <PropertyRef Name="ReferRemis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosPermisos_Usuario">
+          <End Role="Usuario" Type="BD_DespTanqInteModel.Store.Usuario" Multiplicity="1" />
+          <End Role="UsuariosPermisos" Type="BD_DespTanqInteModel.Store.UsuariosPermisos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Usua" />
+            </Principal>
+            <Dependent Role="UsuariosPermisos">
+              <PropertyRef Name="Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="AudiDatosMedidor_por_Fecha" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Fecha" Type="date" Mode="In" />
+        </Function>
+        <Function Name="AudiDatosMedidor_por_NombreUsua" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NombreUsua" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Cauntos_Despache_Entre" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="fecha1" Type="date" Mode="In" />
+          <Parameter Name="fecha2" Type="date" Mode="In" />
+        </Function>
+        <Function Name="Cauntos_Despache_Hoy" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="fecha" Type="date" Mode="In" />
+        </Function>
+        <Function Name="DatosFactura_Guia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Factura" Type="int" Mode="In" />
+          <Parameter Name="GuiaR" Type="int" Mode="In" />
+        </Function>
+        <Function Name="MCDespachadosHoy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Fecha" Type="varchar" Mode="In" />
+          <Parameter Name="IniHora" Type="nchar" Mode="In" />
+          <Parameter Name="FinHora" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="MostrarSoloDetallesFactura_por_NumFactura" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NumFactura" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Reporte_por_NumFactura" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NumFactura" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ReporteDespacho_entre_fechas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Fecha1" Type="date" Mode="In" />
+          <Parameter Name="Fecha2" Type="date" Mode="In" />
+        </Function>
+        <Function Name="ReporteDespacho_por_Fecha" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Fecha" Type="date" Mode="In" />
+        </Function>
+        <Function Name="ReporteDespacho_por_NumRemision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ReferRemis" Type="int" Mode="In" />
+        </Function>
+        <Function Name="UltimoValorMedidor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BD_DespTanqInteModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="BD_DespTanqInteEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clientes" EntityType="BD_DespTanqInteModel.Cliente" />
+          <EntitySet Name="DetalleFacturas" EntityType="BD_DespTanqInteModel.DetalleFactura" />
+          <EntitySet Name="GuiaRemisions" EntityType="BD_DespTanqInteModel.GuiaRemision" />
+          <EntitySet Name="InicioSesions" EntityType="BD_DespTanqInteModel.InicioSesion" />
+          <EntitySet Name="Medidors" EntityType="BD_DespTanqInteModel.Medidor" />
+          <EntitySet Name="MetrosCubicosDepachados" EntityType="BD_DespTanqInteModel.MetrosCubicosDepachado" />
+          <EntitySet Name="Tanqueroes" EntityType="BD_DespTanqInteModel.Tanquero" />
+          <EntitySet Name="Transportistas" EntityType="BD_DespTanqInteModel.Transportista" />
+          <EntitySet Name="Usuarios" EntityType="BD_DespTanqInteModel.Usuario" />
+          <EntitySet Name="UsuariosPermisos" EntityType="BD_DespTanqInteModel.UsuariosPermiso" />
+          <AssociationSet Name="FK_DetalleFactura_Cliente" Association="BD_DespTanqInteModel.FK_DetalleFactura_Cliente">
+            <End Role="Cliente" EntitySet="Clientes" />
+            <End Role="DetalleFactura" EntitySet="DetalleFacturas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GuiaRemision_Cliente" Association="BD_DespTanqInteModel.FK_GuiaRemision_Cliente">
+            <End Role="Cliente" EntitySet="Clientes" />
+            <End Role="GuiaRemision" EntitySet="GuiaRemisions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleFactura_Tanquero" Association="BD_DespTanqInteModel.FK_DetalleFactura_Tanquero">
+            <End Role="Tanquero" EntitySet="Tanqueroes" />
+            <End Role="DetalleFactura" EntitySet="DetalleFacturas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GuiaRemision_DetalleFactura" Association="BD_DespTanqInteModel.FK_GuiaRemision_DetalleFactura">
+            <End Role="DetalleFactura" EntitySet="DetalleFacturas" />
+            <End Role="GuiaRemision" EntitySet="GuiaRemisions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GuiaRemision_Transportista" Association="BD_DespTanqInteModel.FK_GuiaRemision_Transportista">
+            <End Role="Transportista" EntitySet="Transportistas" />
+            <End Role="GuiaRemision" EntitySet="GuiaRemisions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MetrosCubicosDepachados_GuiaRemision" Association="BD_DespTanqInteModel.FK_MetrosCubicosDepachados_GuiaRemision">
+            <End Role="GuiaRemision" EntitySet="GuiaRemisions" />
+            <End Role="MetrosCubicosDepachados" EntitySet="MetrosCubicosDepachados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InicioSesion_Usuario" Association="BD_DespTanqInteModel.FK_InicioSesion_Usuario">
+            <End Role="Usuario" EntitySet="Usuarios" />
+            <End Role="InicioSesion" EntitySet="InicioSesions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Medidor_Usuario" Association="BD_DespTanqInteModel.FK_Medidor_Usuario">
+            <End Role="Usuario" EntitySet="Usuarios" />
+            <End Role="Medidor" EntitySet="Medidors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosPermisos_Usuario" Association="BD_DespTanqInteModel.FK_UsuariosPermisos_Usuario">
+            <End Role="Usuario" EntitySet="Usuarios" />
+            <End Role="UsuariosPermisos" EntitySet="UsuariosPermisos" />
+          </AssociationSet>
+          <FunctionImport Name="MC_Despachados_Hoy" ReturnType="Collection(BD_DespTanqInteModel.MC_Despachados_Hoy_Result2)">
+            <Parameter Name="Fecha" Mode="In" Type="String" />
+            <Parameter Name="IniHora" Mode="In" Type="String" />
+            <Parameter Name="FinHora" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Ultimo_Valor_Medidor" ReturnType="Collection(BD_DespTanqInteModel.Ultimo_Valor_Medidor_Result)" />
+          <FunctionImport Name="ReportePorFacturass" ReturnType="Collection(BD_DespTanqInteModel.ReportePorFacturass_Result)">
+          <Parameter Name="NumFactura" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ReportePorGuia" ReturnType="Collection(BD_DespTanqInteModel.ReportePorGuia_Result)">
+          <Parameter Name="ReferRemis" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="ReporteByFecha" ReturnType="Collection(BD_DespTanqInteModel.ReporteByFecha_Result)">
+          <Parameter Name="Fecha" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="ReporteByFechas" ReturnType="Collection(BD_DespTanqInteModel.ReporteByFechas_Result)">
+            <Parameter Name="Fecha1" Mode="In" Type="DateTime" />
+            <Parameter Name="Fecha2" Mode="In" Type="DateTime" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="CedRucClie" />
+          </Key>
+          <Property Name="CedRucClie" Type="String" Nullable="false" MaxLength="11" Unicode="true" FixedLength="true" />
+          <Property Name="NombreClie" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ApellidoClie" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DireccionCli" Type="String" MaxLength="100" Unicode="false" FixedLength="false" Nullable="false" />
+          <Property Name="TelefonoCli" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="DetalleFacturas" Relationship="BD_DespTanqInteModel.FK_DetalleFactura_Cliente" FromRole="Cliente" ToRole="DetalleFactura" />
+          <NavigationProperty Name="GuiaRemisions" Relationship="BD_DespTanqInteModel.FK_GuiaRemision_Cliente" FromRole="Cliente" ToRole="GuiaRemision" />
+        </EntityType>
+        <EntityType Name="DetalleFactura">
+          <Key>
+            <PropertyRef Name="NumFactura" />
+          </Key>
+          <Property Name="NumFactura" Type="Int32" Nullable="false" />
+          <Property Name="NumControl" Type="Int32" Nullable="false" />
+          <Property Name="FechEmision" Type="DateTime" Nullable="false" />
+          <Property Name="FechFact" Type="DateTime" Nullable="false" />
+          <Property Name="CedRucClie" Type="String" Nullable="false" MaxLength="11" Unicode="true" FixedLength="true" />
+          <Property Name="PlacaTanquero" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="MetrosCubicosFacturados" Type="Int32" Nullable="false" />
+          <Property Name="ValorCancelado" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+          <NavigationProperty Name="Cliente" Relationship="BD_DespTanqInteModel.FK_DetalleFactura_Cliente" FromRole="DetalleFactura" ToRole="Cliente" />
+          <NavigationProperty Name="Tanquero" Relationship="BD_DespTanqInteModel.FK_DetalleFactura_Tanquero" FromRole="DetalleFactura" ToRole="Tanquero" />
+          <NavigationProperty Name="GuiaRemisions" Relationship="BD_DespTanqInteModel.FK_GuiaRemision_DetalleFactura" FromRole="DetalleFactura" ToRole="GuiaRemision" />
+        </EntityType>
+        <EntityType Name="GuiaRemision">
+          <Key>
+            <PropertyRef Name="ReferRemis" />
+          </Key>
+          <Property Name="ReferRemis" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NumFactura" Type="Int32" Nullable="false" />
+          <Property Name="FechInicTras" Type="DateTime" Nullable="false" />
+          <Property Name="FechFinTras" Type="DateTime" Nullable="false" />
+          <Property Name="HoraDespacho" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="true" />
+          <Property Name="CedRucClie" Type="String" Nullable="false" MaxLength="11" Unicode="true" FixedLength="true" />
+          <Property Name="PuntoDestino" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CedRucTran" Type="String" Nullable="false" MaxLength="11" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="Cliente" Relationship="BD_DespTanqInteModel.FK_GuiaRemision_Cliente" FromRole="GuiaRemision" ToRole="Cliente" />
+          <NavigationProperty Name="DetalleFactura" Relationship="BD_DespTanqInteModel.FK_GuiaRemision_DetalleFactura" FromRole="GuiaRemision" ToRole="DetalleFactura" />
+          <NavigationProperty Name="Transportista" Relationship="BD_DespTanqInteModel.FK_GuiaRemision_Transportista" FromRole="GuiaRemision" ToRole="Transportista" />
+          <NavigationProperty Name="MetrosCubicosDepachado" Relationship="BD_DespTanqInteModel.FK_MetrosCubicosDepachados_GuiaRemision" FromRole="GuiaRemision" ToRole="MetrosCubicosDepachados" />
+        </EntityType>
+        <EntityType Name="InicioSesion">
+          <Key>
+            <PropertyRef Name="IdIS" />
+          </Key>
+          <Property Name="IdIS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NombreUsua" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="FecHorIni" Type="DateTime" Nullable="false" />
+          <Property Name="FechHorFin" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="Usuario" Relationship="BD_DespTanqInteModel.FK_InicioSesion_Usuario" FromRole="InicioSesion" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Medidor">
+          <Key>
+            <PropertyRef Name="IdMedidor" />
+          </Key>
+          <Property Name="IdMedidor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LectIni" Type="Int32" Nullable="false" />
+          <Property Name="LectFin" Type="Int32" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" />
+          <Property Name="Observacion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" Nullable="true" />
+          <Property Name="NombreUsua" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Usuario" Relationship="BD_DespTanqInteModel.FK_Medidor_Usuario" FromRole="Medidor" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="MetrosCubicosDepachado">
+          <Key>
+            <PropertyRef Name="ReferRemis" />
+          </Key>
+          <Property Name="ReferRemis" Type="Int32" Nullable="false" />
+          <Property Name="NumFactura" Type="Int32" Nullable="false" />
+          <Property Name="MetrCubiDesp" Type="Int32" Nullable="false" />
+          <Property Name="MetrCubiSobr" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="GuiaRemision" Relationship="BD_DespTanqInteModel.FK_MetrosCubicosDepachados_GuiaRemision" FromRole="MetrosCubicosDepachados" ToRole="GuiaRemision" />
+        </EntityType>
+        <EntityType Name="Tanquero">
+          <Key>
+            <PropertyRef Name="PlacaTanquero" />
+          </Key>
+          <Property Name="PlacaTanquero" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="TanqueroNum" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Capacidad" Type="Int32" Nullable="false" />
+          <Property Name="Marca" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="DetalleFacturas" Relationship="BD_DespTanqInteModel.FK_DetalleFactura_Tanquero" FromRole="Tanquero" ToRole="DetalleFactura" />
+        </EntityType>
+        <EntityType Name="Transportista">
+          <Key>
+            <PropertyRef Name="CedRucTran" />
+          </Key>
+          <Property Name="CedRucTran" Type="String" Nullable="false" MaxLength="11" Unicode="true" FixedLength="true" />
+          <Property Name="NombreTran" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ApellidoTRan" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="GuiaRemisions" Relationship="BD_DespTanqInteModel.FK_GuiaRemision_Transportista" FromRole="Transportista" ToRole="GuiaRemision" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Usua" />
+          </Key>
+          <Property Name="Usua" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="ContrasenaUsua" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CedRucUsua" Type="String" Nullable="false" MaxLength="11" Unicode="true" FixedLength="true" />
+          <Property Name="NombreUsuario" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ApellidoUsuario" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TipoUsuario" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="InicioSesions" Relationship="BD_DespTanqInteModel.FK_InicioSesion_Usuario" FromRole="Usuario" ToRole="InicioSesion" />
+          <NavigationProperty Name="Medidors" Relationship="BD_DespTanqInteModel.FK_Medidor_Usuario" FromRole="Usuario" ToRole="Medidor" />
+          <NavigationProperty Name="UsuariosPermisos" Relationship="BD_DespTanqInteModel.FK_UsuariosPermisos_Usuario" FromRole="Usuario" ToRole="UsuariosPermisos" />
+        </EntityType>
+        <EntityType Name="UsuariosPermiso">
+          <Key>
+            <PropertyRef Name="IdPerUsu" />
+          </Key>
+          <Property Name="IdPerUsu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Usuario" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Tabla" Type="String" Nullable="false" MaxLength="26" Unicode="false" FixedLength="false" />
+          <Property Name="Acceso" Type="Boolean" Nullable="false" />
+          <Property Name="Guardar" Type="Boolean" Nullable="false" />
+          <Property Name="Modificar" Type="Boolean" Nullable="false" />
+          <Property Name="Eliminar" Type="Boolean" Nullable="false" />
+          <Property Name="Imprimir" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Usuario1" Relationship="BD_DespTanqInteModel.FK_UsuariosPermisos_Usuario" FromRole="UsuariosPermisos" ToRole="Usuario" />
+        </EntityType>
+        <Association Name="FK_DetalleFactura_Cliente">
+          <End Role="Cliente" Type="BD_DespTanqInteModel.Cliente" Multiplicity="1" />
+          <End Role="DetalleFactura" Type="BD_DespTanqInteModel.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="CedRucClie" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="CedRucClie" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GuiaRemision_Cliente">
+          <End Role="Cliente" Type="BD_DespTanqInteModel.Cliente" Multiplicity="1" />
+          <End Role="GuiaRemision" Type="BD_DespTanqInteModel.GuiaRemision" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="CedRucClie" />
+            </Principal>
+            <Dependent Role="GuiaRemision">
+              <PropertyRef Name="CedRucClie" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleFactura_Tanquero">
+          <End Role="Tanquero" Type="BD_DespTanqInteModel.Tanquero" Multiplicity="1" />
+          <End Role="DetalleFactura" Type="BD_DespTanqInteModel.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tanquero">
+              <PropertyRef Name="PlacaTanquero" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="PlacaTanquero" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GuiaRemision_DetalleFactura">
+          <End Role="DetalleFactura" Type="BD_DespTanqInteModel.DetalleFactura" Multiplicity="1" />
+          <End Role="GuiaRemision" Type="BD_DespTanqInteModel.GuiaRemision" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DetalleFactura">
+              <PropertyRef Name="NumFactura" />
+            </Principal>
+            <Dependent Role="GuiaRemision">
+              <PropertyRef Name="NumFactura" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GuiaRemision_Transportista">
+          <End Role="Transportista" Type="BD_DespTanqInteModel.Transportista" Multiplicity="1" />
+          <End Role="GuiaRemision" Type="BD_DespTanqInteModel.GuiaRemision" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transportista">
+              <PropertyRef Name="CedRucTran" />
+            </Principal>
+            <Dependent Role="GuiaRemision">
+              <PropertyRef Name="CedRucTran" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MetrosCubicosDepachados_GuiaRemision">
+          <End Role="GuiaRemision" Type="BD_DespTanqInteModel.GuiaRemision" Multiplicity="1" />
+          <End Role="MetrosCubicosDepachados" Type="BD_DespTanqInteModel.MetrosCubicosDepachado" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="GuiaRemision">
+              <PropertyRef Name="ReferRemis" />
+            </Principal>
+            <Dependent Role="MetrosCubicosDepachados">
+              <PropertyRef Name="ReferRemis" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InicioSesion_Usuario">
+          <End Role="Usuario" Type="BD_DespTanqInteModel.Usuario" Multiplicity="1" />
+          <End Role="InicioSesion" Type="BD_DespTanqInteModel.InicioSesion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Usua" />
+            </Principal>
+            <Dependent Role="InicioSesion">
+              <PropertyRef Name="NombreUsua" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Medidor_Usuario">
+          <End Role="Usuario" Type="BD_DespTanqInteModel.Usuario" Multiplicity="1" />
+          <End Role="Medidor" Type="BD_DespTanqInteModel.Medidor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Usua" />
+            </Principal>
+            <Dependent Role="Medidor">
+              <PropertyRef Name="NombreUsua" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosPermisos_Usuario">
+          <End Role="Usuario" Type="BD_DespTanqInteModel.Usuario" Multiplicity="1" />
+          <End Role="UsuariosPermisos" Type="BD_DespTanqInteModel.UsuariosPermiso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Usua" />
+            </Principal>
+            <Dependent Role="UsuariosPermisos">
+              <PropertyRef Name="Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="ReportePorFecha_Result">
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="ReporteEntreFechas_Result">
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="DateTime" Name="FechFinTras" Nullable="false" />
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="ReportePorNumFactura_Result">
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="Int32" Name="NumControl" Nullable="false" />
+          <Property Type="DateTime" Name="FechEmision" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="FechFact" Nullable="false" Precision="23" />
+          <Property Type="String" Name="CedRucClie" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="NombreClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="DireccionCli" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="TelefonoCli" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="PlacaTanquero" Nullable="false" MaxLength="10" />
+          <Property Type="Int32" Name="MetrosCubicosFacturados" Nullable="false" />
+          <Property Type="Decimal" Name="ValorCancelado" Nullable="false" Precision="12" Scale="2" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiSobr" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="ReportePorGuiaRemision_Result">
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="DateTime" Name="FechFinTras" Nullable="false" />
+          <Property Type="String" Name="HoraDespacho" Nullable="false" MaxLength="5" />
+          <Property Type="String" Name="CedRucClie" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="NombreClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PuntoDestino" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="CedRucTran" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="NombreTran" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="MC_Despachados_Hoy_Result">
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiSobr" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="MC_Despachados_Hoy_Result1">
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="DateTime" Name="FechFinTras" Nullable="false" />
+          <Property Type="String" Name="HoraDespacho" Nullable="false" MaxLength="5" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="MC_Despachados_Hoy_Result2">
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="Ultimo_Valor_Medidor_Result">
+          <Property Type="Int32" Name="IdMedidor" Nullable="false" />
+          <Property Type="Int32" Name="LectFin" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="ReporteEntreFechas_Result1">
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+          <Property Type="String" Name="CedRucClie" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="CedRucTran" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreTran" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoTRan" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PlacaTanquero" Nullable="false" MaxLength="10" />
+          <Property Type="Int32" Name="MetrCubiDesp1" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiSobr" Nullable="false" />
+          <Property Type="Int32" Name="Total_MC_Despachados" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="ReporteEntreFechass_Result">
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+          <Property Type="String" Name="CedRucClie" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="CedRucTran" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreTran" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoTRan" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PlacaTanquero" Nullable="false" MaxLength="10" />
+          <Property Type="Int32" Name="MetrCubiDesp1" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiSobr" Nullable="false" />
+          <Property Type="Int32" Name="Total_MC_Despachados" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="ReportePorFacturas_Result">
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="DateTime" Name="FechEmision" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="FechFact" Nullable="false" Precision="23" />
+          <Property Type="Decimal" Name="ValorCancelado" Nullable="false" Precision="12" Scale="2" />
+          <Property Type="String" Name="CedRucClie" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PlacaTanquero" Nullable="false" MaxLength="10" />
+          <Property Type="Int32" Name="MetrosCubicosFacturados" Nullable="false" />
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiSobr" Nullable="false" />
+          <Property Type="Int32" Name="Total_MC_Despachado_factura" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="ReportePorGuia_Result">
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="String" Name="HoraDespacho" Nullable="false" MaxLength="5" />
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="DateTime" Name="FechFact" Nullable="false" Precision="23" />
+          <Property Type="Int32" Name="MetrosCubicosFacturados" Nullable="false" />
+          <Property Type="Decimal" Name="ValorCancelado" Nullable="false" Precision="12" Scale="2" />
+          <Property Type="String" Name="CedRucClie" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PuntoDestino" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="CedRucTran" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreTran" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoTRan" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PlacaTanquero" Nullable="false" MaxLength="10" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiSobr" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="ReportePorFechas_Result">
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+          <Property Type="String" Name="CedRucClie" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="CedRucTran" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreTran" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoTRan" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PlacaTanquero" Nullable="false" MaxLength="10" />
+          <Property Type="Int32" Name="MetrCubiDesp1" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiSobr" Nullable="false" />
+          <Property Type="Int32" Name="Total_MC_Despachados" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="ReporteByFecha_Result">
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="String" Name="CedRucClie" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="CedRucTran" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreTran" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoTRan" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PlacaTanquero" Nullable="false" MaxLength="10" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiSobr" Nullable="false" />
+          <Property Type="Int32" Name="Total_MC_Despachados" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="ReporteByFechas_Result">
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="String" Name="CedRucClie" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="CedRucTran" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreTran" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoTRan" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PlacaTanquero" Nullable="false" MaxLength="10" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiSobr" Nullable="false" />
+          <Property Type="Int32" Name="Total_MC_Despachados" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="ReportePorFacturass_Result">
+          <Property Type="Int32" Name="NumFactura" Nullable="false" />
+          <Property Type="DateTime" Name="FechEmision" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="FechFact" Nullable="false" Precision="23" />
+          <Property Type="Decimal" Name="ValorCancelado" Nullable="false" Precision="12" Scale="2" />
+          <Property Type="String" Name="CedRucClie" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="NombreClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ApellidoClie" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PlacaTanquero" Nullable="false" MaxLength="10" />
+          <Property Type="Int32" Name="MetrosCubicosFacturados" Nullable="false" />
+          <Property Type="Int32" Name="ReferRemis" Nullable="false" />
+          <Property Type="DateTime" Name="FechInicTras" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiDesp" Nullable="false" />
+          <Property Type="Int32" Name="MetrCubiSobr" Nullable="false" />
+          <Property Type="Int32" Name="Total_MC_Despachado_factura" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BD_DespTanqInteModelStoreContainer" CdmEntityContainer="BD_DespTanqInteEntities">
+          <EntitySetMapping Name="Clientes"><EntityTypeMapping TypeName="BD_DespTanqInteModel.Cliente"><MappingFragment StoreEntitySet="Cliente">
+            <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+            <ScalarProperty Name="NombreClie" ColumnName="NombreClie" />
+            <ScalarProperty Name="ApellidoClie" ColumnName="ApellidoClie" />
+            <ScalarProperty Name="DireccionCli" ColumnName="DireccionCli" />
+            <ScalarProperty Name="TelefonoCli" ColumnName="TelefonoCli" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="DetalleFacturas"><EntityTypeMapping TypeName="BD_DespTanqInteModel.DetalleFactura"><MappingFragment StoreEntitySet="DetalleFactura">
+            <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+            <ScalarProperty Name="NumControl" ColumnName="NumControl" />
+            <ScalarProperty Name="FechEmision" ColumnName="FechEmision" />
+            <ScalarProperty Name="FechFact" ColumnName="FechFact" />
+            <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+            <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+            <ScalarProperty Name="MetrosCubicosFacturados" ColumnName="MetrosCubicosFacturados" />
+            <ScalarProperty Name="ValorCancelado" ColumnName="ValorCancelado" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="GuiaRemisions"><EntityTypeMapping TypeName="BD_DespTanqInteModel.GuiaRemision"><MappingFragment StoreEntitySet="GuiaRemision">
+            <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+            <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+            <ScalarProperty Name="FechInicTras" ColumnName="FechInicTras" />
+            <ScalarProperty Name="FechFinTras" ColumnName="FechFinTras" />
+            <ScalarProperty Name="HoraDespacho" ColumnName="HoraDespacho" />
+            <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+            <ScalarProperty Name="PuntoDestino" ColumnName="PuntoDestino" />
+            <ScalarProperty Name="CedRucTran" ColumnName="CedRucTran" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="InicioSesions"><EntityTypeMapping TypeName="BD_DespTanqInteModel.InicioSesion"><MappingFragment StoreEntitySet="InicioSesion">
+            <ScalarProperty Name="IdIS" ColumnName="IdIS" />
+            <ScalarProperty Name="NombreUsua" ColumnName="NombreUsua" />
+            <ScalarProperty Name="FecHorIni" ColumnName="FecHorIni" />
+            <ScalarProperty Name="FechHorFin" ColumnName="FechHorFin" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Medidors"><EntityTypeMapping TypeName="BD_DespTanqInteModel.Medidor"><MappingFragment StoreEntitySet="Medidor">
+            <ScalarProperty Name="IdMedidor" ColumnName="IdMedidor" />
+            <ScalarProperty Name="LectIni" ColumnName="LectIni" />
+            <ScalarProperty Name="LectFin" ColumnName="LectFin" />
+            <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+            <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+            <ScalarProperty Name="NombreUsua" ColumnName="NombreUsua" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="MetrosCubicosDepachados"><EntityTypeMapping TypeName="BD_DespTanqInteModel.MetrosCubicosDepachado"><MappingFragment StoreEntitySet="MetrosCubicosDepachados">
+            <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+            <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+            <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+            <ScalarProperty Name="MetrCubiSobr" ColumnName="MetrCubiSobr" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Tanqueroes"><EntityTypeMapping TypeName="BD_DespTanqInteModel.Tanquero"><MappingFragment StoreEntitySet="Tanquero">
+            <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+            <ScalarProperty Name="TanqueroNum" ColumnName="TanqueroNum" />
+            <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
+            <ScalarProperty Name="Marca" ColumnName="Marca" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Transportistas"><EntityTypeMapping TypeName="BD_DespTanqInteModel.Transportista"><MappingFragment StoreEntitySet="Transportista">
+            <ScalarProperty Name="CedRucTran" ColumnName="CedRucTran" />
+            <ScalarProperty Name="NombreTran" ColumnName="NombreTran" />
+            <ScalarProperty Name="ApellidoTRan" ColumnName="ApellidoTRan" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Usuarios"><EntityTypeMapping TypeName="BD_DespTanqInteModel.Usuario"><MappingFragment StoreEntitySet="Usuario">
+            <ScalarProperty Name="Usua" ColumnName="Usua" />
+            <ScalarProperty Name="ContrasenaUsua" ColumnName="ContrasenaUsua" />
+            <ScalarProperty Name="CedRucUsua" ColumnName="CedRucUsua" />
+            <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+            <ScalarProperty Name="ApellidoUsuario" ColumnName="ApellidoUsuario" />
+            <ScalarProperty Name="TipoUsuario" ColumnName="TipoUsuario" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UsuariosPermisos"><EntityTypeMapping TypeName="BD_DespTanqInteModel.UsuariosPermiso"><MappingFragment StoreEntitySet="UsuariosPermisos">
+            <ScalarProperty Name="IdPerUsu" ColumnName="IdPerUsu" />
+            <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+            <ScalarProperty Name="Tabla" ColumnName="Tabla" />
+            <ScalarProperty Name="Acceso" ColumnName="Acceso" />
+            <ScalarProperty Name="Guardar" ColumnName="Guardar" />
+            <ScalarProperty Name="Modificar" ColumnName="Modificar" />
+            <ScalarProperty Name="Eliminar" ColumnName="Eliminar" />
+            <ScalarProperty Name="Imprimir" ColumnName="Imprimir" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="MC_Despachados_Hoy" FunctionName="BD_DespTanqInteModel.Store.MCDespachadosHoy">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BD_DespTanqInteModel.MC_Despachados_Hoy_Result2">
+                <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Ultimo_Valor_Medidor" FunctionName="BD_DespTanqInteModel.Store.UltimoValorMedidor">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BD_DespTanqInteModel.Ultimo_Valor_Medidor_Result">
+                <ScalarProperty Name="IdMedidor" ColumnName="IdMedidor" />
+                <ScalarProperty Name="LectFin" ColumnName="LectFin" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ReportePorFacturass" FunctionName="BD_DespTanqInteModel.Store.Reporte_por_NumFactura">
+          <ResultMapping>
+              <ComplexTypeMapping TypeName="BD_DespTanqInteModel.ReportePorFacturass_Result">
+                <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+                <ScalarProperty Name="FechEmision" ColumnName="FechEmision" />
+                <ScalarProperty Name="FechFact" ColumnName="FechFact" />
+                <ScalarProperty Name="ValorCancelado" ColumnName="ValorCancelado" />
+                <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+                <ScalarProperty Name="NombreClie" ColumnName="NombreClie" />
+                <ScalarProperty Name="ApellidoClie" ColumnName="ApellidoClie" />
+                <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+                <ScalarProperty Name="MetrosCubicosFacturados" ColumnName="MetrosCubicosFacturados" />
+                <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+                <ScalarProperty Name="FechInicTras" ColumnName="FechInicTras" />
+                <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+                <ScalarProperty Name="MetrCubiSobr" ColumnName="MetrCubiSobr" />
+                <ScalarProperty Name="Total_MC_Despachado_factura" ColumnName="Total MC Despachado factura" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ReportePorGuia" FunctionName="BD_DespTanqInteModel.Store.ReporteDespacho_por_NumRemision">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BD_DespTanqInteModel.ReportePorGuia_Result">
+                <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+                <ScalarProperty Name="FechInicTras" ColumnName="FechInicTras" />
+                <ScalarProperty Name="HoraDespacho" ColumnName="HoraDespacho" />
+                <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+                <ScalarProperty Name="FechFact" ColumnName="FechFact" />
+                <ScalarProperty Name="MetrosCubicosFacturados" ColumnName="MetrosCubicosFacturados" />
+                <ScalarProperty Name="ValorCancelado" ColumnName="ValorCancelado" />
+                <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+                <ScalarProperty Name="NombreClie" ColumnName="NombreClie" />
+                <ScalarProperty Name="ApellidoClie" ColumnName="ApellidoClie" />
+                <ScalarProperty Name="PuntoDestino" ColumnName="PuntoDestino" />
+                <ScalarProperty Name="CedRucTran" ColumnName="CedRucTran" />
+                <ScalarProperty Name="NombreTran" ColumnName="NombreTran" />
+                <ScalarProperty Name="ApellidoTRan" ColumnName="ApellidoTRan" />
+                <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+                <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+                <ScalarProperty Name="MetrCubiSobr" ColumnName="MetrCubiSobr" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ReporteByFecha" FunctionName="BD_DespTanqInteModel.Store.ReporteDespacho_por_Fecha">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BD_DespTanqInteModel.ReporteByFecha_Result">
+                <ScalarProperty Name="FechInicTras" ColumnName="FechInicTras" />
+                <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+                <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+                <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+                <ScalarProperty Name="NombreClie" ColumnName="NombreClie" />
+                <ScalarProperty Name="ApellidoClie" ColumnName="ApellidoClie" />
+                <ScalarProperty Name="CedRucTran" ColumnName="CedRucTran" />
+                <ScalarProperty Name="NombreTran" ColumnName="NombreTran" />
+                <ScalarProperty Name="ApellidoTRan" ColumnName="ApellidoTRan" />
+                <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+                <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+                <ScalarProperty Name="MetrCubiSobr" ColumnName="MetrCubiSobr" />
+                <ScalarProperty Name="Total_MC_Despachados" ColumnName="Total MC Despachados" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ReporteByFechas" FunctionName="BD_DespTanqInteModel.Store.ReporteDespacho_entre_fechas">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BD_DespTanqInteModel.ReporteByFechas_Result">
+                <ScalarProperty Name="FechInicTras" ColumnName="FechInicTras" />
+                <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+                <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+                <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+                <ScalarProperty Name="NombreClie" ColumnName="NombreClie" />
+                <ScalarProperty Name="ApellidoClie" ColumnName="ApellidoClie" />
+                <ScalarProperty Name="CedRucTran" ColumnName="CedRucTran" />
+                <ScalarProperty Name="NombreTran" ColumnName="NombreTran" />
+                <ScalarProperty Name="ApellidoTRan" ColumnName="ApellidoTRan" />
+                <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+                <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+                <ScalarProperty Name="MetrCubiSobr" ColumnName="MetrCubiSobr" />
+                <ScalarProperty Name="Total_MC_Despachados" ColumnName="Total MC Despachados" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="BD_DespTanqInte">
+        <EntityTypeShape EntityType="BD_DespTanqInteModel.Cliente" Width="1.5" PointX="0.75" PointY="1.5" Height="2.3648893229166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_DespTanqInteModel.DetalleFactura" Width="1.5" PointX="3" PointY="1.125" Height="3.1340950520833331" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_DespTanqInteModel.GuiaRemision" Width="1.5" PointX="5.25" PointY="1" Height="3.3263964843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_DespTanqInteModel.InicioSesion" Width="1.5" PointX="8" PointY="6.25" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_DespTanqInteModel.Medidor" Width="1.5" PointX="8" PointY="9" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_DespTanqInteModel.MetrosCubicosDepachado" Width="1.5" PointX="7.5" PointY="1.625" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_DespTanqInteModel.Tanquero" Width="1.5" PointX="0.75" PointY="5.625" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_DespTanqInteModel.Transportista" Width="1.5" PointX="3" PointY="5.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_DespTanqInteModel.Usuario" Width="1.5" PointX="5.75" PointY="9.125" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_DespTanqInteModel.UsuariosPermiso" Width="1.5" PointX="8" PointY="12.125" Height="2.7494921875000031" IsExpanded="true" />
+        <AssociationConnector Association="BD_DespTanqInteModel.FK_DetalleFactura_Cliente" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.6824446614583328" />
+          <ConnectorPoint PointX="3" PointY="2.6824446614583328" />
+        </AssociationConnector>
+        <AssociationConnector Association="BD_DespTanqInteModel.FK_GuiaRemision_Cliente" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="1.5" />
+          <ConnectorPoint PointX="1.5" PointY="1.03125" />
+          <ConnectorPoint PointX="5.25" PointY="1.03125" />
+        </AssociationConnector>
+        <AssociationConnector Association="BD_DespTanqInteModel.FK_DetalleFactura_Tanquero" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="5.625" />
+          <ConnectorPoint PointX="2.625" PointY="5.25" />
+          <ConnectorPoint PointX="2.625" PointY="3.5020218567708339" />
+          <ConnectorPoint PointX="3" PointY="3.5020218567708339" />
+        </AssociationConnector>
+        <AssociationConnector Association="BD_DespTanqInteModel.FK_GuiaRemision_DetalleFactura" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="2.6920475260416667" />
+          <ConnectorPoint PointX="5.25" PointY="2.6920475260416667" />
+        </AssociationConnector>
+        <AssociationConnector Association="BD_DespTanqInteModel.FK_GuiaRemision_Transportista" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="6.6439925130208337" />
+          <ConnectorPoint PointX="6" PointY="6.6439925130208337" />
+          <ConnectorPoint PointX="6" PointY="4.326396484375" />
+        </AssociationConnector>
+        <AssociationConnector Association="BD_DespTanqInteModel.FK_MetrosCubicosDepachados_GuiaRemision" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="2.6151432291666659" />
+          <ConnectorPoint PointX="7.5" PointY="2.6151432291666659" />
+        </AssociationConnector>
+        <AssociationConnector Association="BD_DespTanqInteModel.FK_InicioSesion_Usuario" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.625" PointY="9.125" />
+          <ConnectorPoint PointX="6.625" PointY="7.4371394856770836" />
+          <ConnectorPoint PointX="8" PointY="7.4371394856770836" />
+        </AssociationConnector>
+        <AssociationConnector Association="BD_DespTanqInteModel.FK_Medidor_Usuario" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.25" PointY="10.244944661458334" />
+          <ConnectorPoint PointX="8" PointY="10.244944661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="BD_DespTanqInteModel.FK_UsuariosPermisos_Usuario" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.5" PointY="11.8744921875" />
+          <ConnectorPoint PointX="6.5" PointY="13.499746093750002" />
+          <ConnectorPoint PointX="8" PointY="13.499746093750002" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

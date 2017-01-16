@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BD_DespTanqInteModelStoreContainer" CdmEntityContainer="BD_DespTanqInteEntities">
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="BD_DespTanqInteModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+          <ScalarProperty Name="NombreClie" ColumnName="NombreClie" />
+          <ScalarProperty Name="ApellidoClie" ColumnName="ApellidoClie" />
+          <ScalarProperty Name="DireccionCli" ColumnName="DireccionCli" />
+          <ScalarProperty Name="TelefonoCli" ColumnName="TelefonoCli" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleFacturas">
+      <EntityTypeMapping TypeName="BD_DespTanqInteModel.DetalleFactura">
+        <MappingFragment StoreEntitySet="DetalleFactura">
+          <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+          <ScalarProperty Name="NumControl" ColumnName="NumControl" />
+          <ScalarProperty Name="FechEmision" ColumnName="FechEmision" />
+          <ScalarProperty Name="FechFact" ColumnName="FechFact" />
+          <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+          <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+          <ScalarProperty Name="MetrosCubicosFacturados" ColumnName="MetrosCubicosFacturados" />
+          <ScalarProperty Name="ValorCancelado" ColumnName="ValorCancelado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GuiaRemisions">
+      <EntityTypeMapping TypeName="BD_DespTanqInteModel.GuiaRemision">
+        <MappingFragment StoreEntitySet="GuiaRemision">
+          <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+          <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+          <ScalarProperty Name="FechInicTras" ColumnName="FechInicTras" />
+          <ScalarProperty Name="FechFinTras" ColumnName="FechFinTras" />
+          <ScalarProperty Name="HoraDespacho" ColumnName="HoraDespacho" />
+          <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+          <ScalarProperty Name="PuntoDestino" ColumnName="PuntoDestino" />
+          <ScalarProperty Name="CedRucTran" ColumnName="CedRucTran" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InicioSesions">
+      <EntityTypeMapping TypeName="BD_DespTanqInteModel.InicioSesion">
+        <MappingFragment StoreEntitySet="InicioSesion">
+          <ScalarProperty Name="IdIS" ColumnName="IdIS" />
+          <ScalarProperty Name="NombreUsua" ColumnName="NombreUsua" />
+          <ScalarProperty Name="FecHorIni" ColumnName="FecHorIni" />
+          <ScalarProperty Name="FechHorFin" ColumnName="FechHorFin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medidors">
+      <EntityTypeMapping TypeName="BD_DespTanqInteModel.Medidor">
+        <MappingFragment StoreEntitySet="Medidor">
+          <ScalarProperty Name="IdMedidor" ColumnName="IdMedidor" />
+          <ScalarProperty Name="LectIni" ColumnName="LectIni" />
+          <ScalarProperty Name="LectFin" ColumnName="LectFin" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="NombreUsua" ColumnName="NombreUsua" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MetrosCubicosDepachados">
+      <EntityTypeMapping TypeName="BD_DespTanqInteModel.MetrosCubicosDepachado">
+        <MappingFragment StoreEntitySet="MetrosCubicosDepachados">
+          <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+          <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+          <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+          <ScalarProperty Name="MetrCubiSobr" ColumnName="MetrCubiSobr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tanqueroes">
+      <EntityTypeMapping TypeName="BD_DespTanqInteModel.Tanquero">
+        <MappingFragment StoreEntitySet="Tanquero">
+          <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+          <ScalarProperty Name="TanqueroNum" ColumnName="TanqueroNum" />
+          <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transportistas">
+      <EntityTypeMapping TypeName="BD_DespTanqInteModel.Transportista">
+        <MappingFragment StoreEntitySet="Transportista">
+          <ScalarProperty Name="CedRucTran" ColumnName="CedRucTran" />
+          <ScalarProperty Name="NombreTran" ColumnName="NombreTran" />
+          <ScalarProperty Name="ApellidoTRan" ColumnName="ApellidoTRan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="BD_DespTanqInteModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="Usua" ColumnName="Usua" />
+          <ScalarProperty Name="ContrasenaUsua" ColumnName="ContrasenaUsua" />
+          <ScalarProperty Name="CedRucUsua" ColumnName="CedRucUsua" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="ApellidoUsuario" ColumnName="ApellidoUsuario" />
+          <ScalarProperty Name="TipoUsuario" ColumnName="TipoUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsuariosPermisos">
+      <EntityTypeMapping TypeName="BD_DespTanqInteModel.UsuariosPermiso">
+        <MappingFragment StoreEntitySet="UsuariosPermisos">
+          <ScalarProperty Name="IdPerUsu" ColumnName="IdPerUsu" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Tabla" ColumnName="Tabla" />
+          <ScalarProperty Name="Acceso" ColumnName="Acceso" />
+          <ScalarProperty Name="Guardar" ColumnName="Guardar" />
+          <ScalarProperty Name="Modificar" ColumnName="Modificar" />
+          <ScalarProperty Name="Eliminar" ColumnName="Eliminar" />
+          <ScalarProperty Name="Imprimir" ColumnName="Imprimir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="MC_Despachados_Hoy" FunctionName="BD_DespTanqInteModel.Store.MCDespachadosHoy">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_DespTanqInteModel.MC_Despachados_Hoy_Result2">
+          <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Ultimo_Valor_Medidor" FunctionName="BD_DespTanqInteModel.Store.UltimoValorMedidor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_DespTanqInteModel.Ultimo_Valor_Medidor_Result">
+          <ScalarProperty Name="IdMedidor" ColumnName="IdMedidor" />
+          <ScalarProperty Name="LectFin" ColumnName="LectFin" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ReportePorFacturass" FunctionName="BD_DespTanqInteModel.Store.Reporte_por_NumFactura">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_DespTanqInteModel.ReportePorFacturass_Result">
+          <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+          <ScalarProperty Name="FechEmision" ColumnName="FechEmision" />
+          <ScalarProperty Name="FechFact" ColumnName="FechFact" />
+          <ScalarProperty Name="ValorCancelado" ColumnName="ValorCancelado" />
+          <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+          <ScalarProperty Name="NombreClie" ColumnName="NombreClie" />
+          <ScalarProperty Name="ApellidoClie" ColumnName="ApellidoClie" />
+          <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+          <ScalarProperty Name="MetrosCubicosFacturados" ColumnName="MetrosCubicosFacturados" />
+          <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+          <ScalarProperty Name="FechInicTras" ColumnName="FechInicTras" />
+          <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+          <ScalarProperty Name="MetrCubiSobr" ColumnName="MetrCubiSobr" />
+          <ScalarProperty Name="Total_MC_Despachado_factura" ColumnName="Total MC Despachado factura" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ReportePorGuia" FunctionName="BD_DespTanqInteModel.Store.ReporteDespacho_por_NumRemision">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_DespTanqInteModel.ReportePorGuia_Result">
+          <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+          <ScalarProperty Name="FechInicTras" ColumnName="FechInicTras" />
+          <ScalarProperty Name="HoraDespacho" ColumnName="HoraDespacho" />
+          <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+          <ScalarProperty Name="FechFact" ColumnName="FechFact" />
+          <ScalarProperty Name="MetrosCubicosFacturados" ColumnName="MetrosCubicosFacturados" />
+          <ScalarProperty Name="ValorCancelado" ColumnName="ValorCancelado" />
+          <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+          <ScalarProperty Name="NombreClie" ColumnName="NombreClie" />
+          <ScalarProperty Name="ApellidoClie" ColumnName="ApellidoClie" />
+          <ScalarProperty Name="PuntoDestino" ColumnName="PuntoDestino" />
+          <ScalarProperty Name="CedRucTran" ColumnName="CedRucTran" />
+          <ScalarProperty Name="NombreTran" ColumnName="NombreTran" />
+          <ScalarProperty Name="ApellidoTRan" ColumnName="ApellidoTRan" />
+          <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+          <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+          <ScalarProperty Name="MetrCubiSobr" ColumnName="MetrCubiSobr" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ReporteByFecha" FunctionName="BD_DespTanqInteModel.Store.ReporteDespacho_por_Fecha">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_DespTanqInteModel.ReporteByFecha_Result">
+          <ScalarProperty Name="FechInicTras" ColumnName="FechInicTras" />
+          <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+          <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+          <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+          <ScalarProperty Name="NombreClie" ColumnName="NombreClie" />
+          <ScalarProperty Name="ApellidoClie" ColumnName="ApellidoClie" />
+          <ScalarProperty Name="CedRucTran" ColumnName="CedRucTran" />
+          <ScalarProperty Name="NombreTran" ColumnName="NombreTran" />
+          <ScalarProperty Name="ApellidoTRan" ColumnName="ApellidoTRan" />
+          <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+          <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+          <ScalarProperty Name="MetrCubiSobr" ColumnName="MetrCubiSobr" />
+          <ScalarProperty Name="Total_MC_Despachados" ColumnName="Total MC Despachados" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ReporteByFechas" FunctionName="BD_DespTanqInteModel.Store.ReporteDespacho_entre_fechas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_DespTanqInteModel.ReporteByFechas_Result">
+          <ScalarProperty Name="FechInicTras" ColumnName="FechInicTras" />
+          <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+          <ScalarProperty Name="ReferRemis" ColumnName="ReferRemis" />
+          <ScalarProperty Name="CedRucClie" ColumnName="CedRucClie" />
+          <ScalarProperty Name="NombreClie" ColumnName="NombreClie" />
+          <ScalarProperty Name="ApellidoClie" ColumnName="ApellidoClie" />
+          <ScalarProperty Name="CedRucTran" ColumnName="CedRucTran" />
+          <ScalarProperty Name="NombreTran" ColumnName="NombreTran" />
+          <ScalarProperty Name="ApellidoTRan" ColumnName="ApellidoTRan" />
+          <ScalarProperty Name="PlacaTanquero" ColumnName="PlacaTanquero" />
+          <ScalarProperty Name="MetrCubiDesp" ColumnName="MetrCubiDesp" />
+          <ScalarProperty Name="MetrCubiSobr" ColumnName="MetrCubiSobr" />
+          <ScalarProperty Name="Total_MC_Despachados" ColumnName="Total MC Despachados" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
