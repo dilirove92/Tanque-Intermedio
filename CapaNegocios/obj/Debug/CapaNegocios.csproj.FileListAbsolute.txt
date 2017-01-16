@@ -1,0 +1,133 @@
+c:\users\yahina\documents\visual studio 2010\Projects\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+c:\users\yahina\documents\visual studio 2010\Projects\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+c:\users\yahina\documents\visual studio 2010\Projects\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+c:\users\yahina\documents\visual studio 2010\Projects\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+c:\users\yahina\documents\visual studio 2010\Projects\ProyectoTanqueIntermedioEpam\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+c:\users\yahina\documents\visual studio 2010\Projects\ProyectoTanqueIntermedioEpam\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+c:\users\yahina\documents\visual studio 2010\Projects\ProyectoTanqueIntermedioEpam\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ultima actualizacon 10-02-2013\local\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ultima actualizacon 10-02-2013\local\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ultima actualizacon 10-02-2013\local\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\USUARIO\Desktop\ultima actualizacon 10-02-2013\local\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\USUARIO\Desktop\ultima actualizacon 10-02-2013\local\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\Desktop\ultima actualizacon 10-02-2013\local\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ultima actualizacon 10-02-2013\local\ProyectoTanqueIntermedioEpam\ProyectoTanqueIntermedioEpam\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\TanqueIntermedioEly\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\TanqueIntermedioEly\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\TanqueIntermedioEly\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\TanqueIntermedioEly\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\TanqueIntermedioEly\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\TanqueIntermedioEly\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\TanqueIntermedioEly\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\diana\ProyectoTanqueIntermedioEpam Diana11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ultima actualización 11-02-2013\local\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Documents\Visual Studio 2010\Projects\Proyecto Tanque Intermedio 11-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Documents\ProyecTanqueIntermedio Diana 12-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Documents\ProyecTanqueIntermedio Diana 12-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Documents\ProyecTanqueIntermedio Diana 12-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\yahina\Documents\ProyecTanqueIntermedio Diana 12-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\yahina\Documents\ProyecTanqueIntermedio Diana 12-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yahina\Documents\ProyecTanqueIntermedio Diana 12-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Documents\ProyecTanqueIntermedio Diana 12-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana 13-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana 13-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana 13-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana 13-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana 13-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana 13-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam Diana 13-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Desktop\18 FEBRERO\ProyectoTanqueIntermedioEpam Diana 17-02-2013(1)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Desktop\18 FEBRERO\ProyectoTanqueIntermedioEpam Diana 17-02-2013(1)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Desktop\18 FEBRERO\ProyectoTanqueIntermedioEpam Diana 17-02-2013(1)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\yahina\Desktop\18 FEBRERO\ProyectoTanqueIntermedioEpam Diana 17-02-2013(1)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\yahina\Desktop\18 FEBRERO\ProyectoTanqueIntermedioEpam Diana 17-02-2013(1)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yahina\Desktop\18 FEBRERO\ProyectoTanqueIntermedioEpam Diana 17-02-2013(1)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Desktop\18 FEBRERO\ProyectoTanqueIntermedioEpam Diana 17-02-2013(1)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (3)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (3)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (3)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (3)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (3)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (3)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (3)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 22-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 22-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 22-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 22-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 22-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 22-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana 21-02-2013\ProyectoTanqueIntermedioEpam Diana 22-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Desktop\26 DE FEBRERO\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Desktop\26 DE FEBRERO\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Desktop\26 DE FEBRERO\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\yahina\Desktop\26 DE FEBRERO\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\yahina\Desktop\26 DE FEBRERO\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yahina\Desktop\26 DE FEBRERO\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Desktop\26 DE FEBRERO\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana 25-02-2013\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (4)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (4)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (4)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (4)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (4)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (4)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Downloads\ProyectoTanqueIntermedioEpam Diana (4)\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Desktop\28 FEBRERO\ProyectoTanqueIntermedioEpam Diana 27-02-2012\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Desktop\28 FEBRERO\ProyectoTanqueIntermedioEpam Diana 27-02-2012\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\yahina\Desktop\28 FEBRERO\ProyectoTanqueIntermedioEpam Diana 27-02-2012\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\yahina\Desktop\28 FEBRERO\ProyectoTanqueIntermedioEpam Diana 27-02-2012\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\yahina\Desktop\28 FEBRERO\ProyectoTanqueIntermedioEpam Diana 27-02-2012\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yahina\Desktop\28 FEBRERO\ProyectoTanqueIntermedioEpam Diana 27-02-2012\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\yahina\Desktop\28 FEBRERO\ProyectoTanqueIntermedioEpam Diana 27-02-2012\ProyectoTanqueIntermedioEpam Diana\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam 28-02-2013\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam 28-02-2013\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam 28-02-2013\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam 28-02-2013\CapaNegocios\bin\Debug\ProyectoTanqueIntermedioEpam.CapaDatos.pdb
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam 28-02-2013\CapaNegocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam 28-02-2013\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.dll
+C:\Users\USUARIO\Desktop\ProyectoTanqueIntermedioEpam 28-02-2013\CapaNegocios\obj\Debug\ProyectoTanqueIntermedioEpam.CapaNegocios.pdb
